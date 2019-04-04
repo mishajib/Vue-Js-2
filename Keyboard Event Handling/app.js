@@ -4,8 +4,14 @@ var myapp = new Vue({
 				
 			},
 			methods: {
-				keypressfunction() {
-					console.log("Key Pressed");
-				}
+				keypressfunction(event) {
+					console.log(event.key);
+				},
+				keyupfunction(event) {
+					console.log(event.key);
+				},
+				keydownfunction(event) {
+					console.log(event.key);
+				},
 			}
 		});
