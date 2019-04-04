@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Concepts Of Method</title>
+	<link rel="icon" href="logo.png">
+	<style>
+		.imagesize{
+			height: 100px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<a v-bind:href="flink" v-bind:title="title">{{ name }}</a>
+		<br>
+		<img :src="imagelink" :class="{imagesize:isActive}">
+		<br>
+		<form method="post" action="">
+			<input type="text" :value="txtName" placeholder="Name">
+			<input type="text" :value="txtEmail" placeholder="Email">
+			<button name="button" type="button">Submit</button>
+		</form>
+
+		<br>
+
+		<div v-html="htmlContent">
+			
+		</div>
+
+
+	</div>
+
+	<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+	<script src="app.js"></script>	
+</body>
+</html>

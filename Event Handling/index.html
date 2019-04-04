@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Concepts Of Method</title>
+	<link rel="icon" href="logo.png">
+	<style>
+		.imagesize{
+			height: 100px;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app">
+		<h3>Counter: {{ counter }}</h3>
+		<button type="button" v-on:click="increment(1)">Increment By One</button>
+		<button type="button" @click="decrement(1)">Decrement By One</button>
+
+
+		<button type="button" v-on:dblclick="increment(5)">Increment By Five</button>
+		<button type="button" @dblclick="decrement(5)">Decrement By Five</button>
+	<br>
+	<br>
+		<div class="move-area" @mousemove="movefunction" style="height: 200px; width: 200px; border: 1px solid black; text-align: center;">
+			<span>{{ x }}, {{ y }}</span>
+		</div>
+		<br>
+		<button type="button" @mouseover="mouseoverfunction">MouserOver</button>
+		<button type="button" @mouseout="mouseoutfunction">MouserOut</button>
+	</div>
+
+	<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+	<script src="app.js"></script>	
+</body>
+</html>
