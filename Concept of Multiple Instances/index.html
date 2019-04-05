@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Concepts Of Method</title>
+	<link rel="icon" href="logo.png">
+</head>
+<body>
+	<div id="app1">
+		<p>Title: {{ title }}</p>
+		<p> {{ firstApp() }} </p>
+	</div>
+
+	<div id="app2">
+		<p>Title: {{ title }} (Property from First App)</p>
+		<p>Author: {{ author }} </p>
+		<p> {{ secondApp() }} </p>
+		<p>Method from First Instances: {{ receiveMethod() }} </p>
+		<p>Computed Method From First Instances Access by Second Method Property Function: {{ accessComputed() }} </p>
+	</div>
+
+	<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+	<script src="app.js"></script>	
+</body>
+</html>
