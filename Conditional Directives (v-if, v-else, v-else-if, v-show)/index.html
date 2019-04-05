@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Concepts Of Method</title>
+	<link rel="icon" href="logo.png">
+</head>
+<body>
+	<div id="app">
+		<!-- v-if Directive -->
+		<p v-if="isActive" id="v-if">This is if Statement</p>
+		<p v-else>This is else Statement</p>
+		<br><br>
+
+		<!-- v-show Directive -->
+		<!-- v-show directive use display css property for check condition -->
+		<p v-show="isActive" id="v-show">This is show Statement</p>
+		<p v-else>This is else Statement</p>
+
+		<br><br>
+		<!-- v-else-if directive -->
+		<button type="button" @click="incCount">Increment by One</button>
+		<button type="button" @click="decCount">Decrement by One</button>
+		<h4>Count: {{ count }}</h4>
+		<p v-if="count == 1">This is Value = 1</p>
+		<p v-else-if="count == 2">This is Value = 2</p>
+		<p v-else-if="count == 3">This is Value = 3</p>
+		<p v-else>No Value Matched</p>
+
+	</div>
+
+	<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+	<script src="app.js"></script>	
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Concepts Of Method</title>
+	<link rel="icon" href="logo.png">
+</head>
+<body>
+	<div id="app">
+		<!--
+			if want to use ctrl, alt key then you have to use @keyup or @keydown event other wise it will not work. 
+		-->
+		<!-- 
+		@keyup.alt.enter
+		@keyup.enter
+		@keyup.ctrl.enter
+		@keyup.ctrl.v
+		@keyup.space
+		@keyup.delete
+		@keyup.keycode (keycode means numeric value of alphabets) 
+		-->
+
+
+		<input type="text" @keyup.65="keypressFunction" placeholder="Enter Any Text">
+	</div>
+
+	<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+	<script src="app.js"></script>	
+</body>
+</html>

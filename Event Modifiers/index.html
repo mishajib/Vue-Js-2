@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Concepts Of Method</title>
+	<link rel="icon" href="logo.png">
+</head>
+<body>
+	<div id="app">
+		<h3>Counter: {{ counter }}</h3>
+		<button type="button" @click.once="increment">Increment by One</button>
+		<br>
+		<br>
+
+		<a href="https://www.mi-shajib.com" @click.prevent>MI SHAJIB</a>
+		<br>
+		<br>
+		<form action="" method="post" @submit.prevent>
+			<button type="submit">Submit</button>
+		</form>
+
+		<br>
+		<br>
+
+		<div id="parent-div" @click="submitClick">
+			<button id="child-id" @click.stop="submitClick">
+				Click Me
+			</button>
+		</div>
+
+		<br>
+		<br>
+
+		<div class="parent-class" @click.capture="parentClass">
+			<button type="button" @click="btnClick">Click Me...</button>
+		</div>
+
+
+	</div>
+
+	<script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+	<script src="app.js"></script>	
+</body>
+</html>
